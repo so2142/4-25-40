@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+    // for
+        for (var i = 1; i < 10; i++) {
+          console.log("ループ" + i + "回目");
+        };
+    // 解説
+    // for ( )     繰返しの処理を実行します
+    // var i = 1;  iに初期値として1を代入しています
+    // i < 10;     ループの条件の指定
+    // 　　　　　　　 =＞ iが10と等しいか、大きくなったときにループが終了します
+    // i ++        ループの処理が終わったときに 1 が足されます
+    //             これを忘れると無限ループとなります(実験したら、webが落ちたので要注意)
+
+    // for in
+        var items = ["リンゴ", "バナナ", "イチゴ"];
+        for (index in items) {
+          console.log(items[index]);
+        };
+
+    // for of
+    var teachers = [
+        { name: "太郎", age: 25, subject: "国語",
+        },
+        { name: "浩司", age: 30, subject: "数学",
+        },
+        { name: "花子", age: 26, subject: "社会",
+        } 
+    ]
+    for (teacher of teachers) {
+        console.log(teacher);
+    };
+
+    // 課題1
+    for (var i = 0; i < 5; i++) {
+        console.log(i*10 + "$")
+    }
+
+    // 課題2
+    var tea = ["緑茶","紅茶","烏龍茶"]
+    for (index in fruit) ;
+    var fruit = ["イチゴ","ミカン","ブドウ"]
+    for (index in fruit) {
+        console.log(fruit[index]);
+    }
+
+    // 課題3
+    var tea = [
+    {
+      name: "緑茶",
+      temperature: "70°C",
+      extraction_time: "30sec",
+    },
+    {
+      name: "紅茶",
+      temperature: "95°C",
+      extraction_time: "180sec",
+    },
+    {
+      name: "烏龍茶",
+      temperature: "80°C",
+      extraction_time: "45sec",
+    },
+    {
+      name: "玄米茶",
+      temperature: "85°C",
+      extraction_time: "20sec",
+    }
+  ]
+  for (drinks of tea){
+    console.log(drinks);
+  };
+  
+    </script>
+</body>
+</html
+
+
+
+

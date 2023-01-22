@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+      var fruits = ["リンゴ", "バナナ", "イチゴ"];
+      console.log(fruits);
+
+      var fruits = ["リンゴ", "バナナ", "イチゴ"];
+      console.log(fruits[0]);
+
+
+      // プロパティーとは以下を合わせた名称のこと
+      // var xxx = {
+        // key(と呼びます): "value(と呼びます)",
+      // }
+
+      // 以下の場合、nameがkey 太郎がvalueです
+      var teacher = {
+        name: "太郎", 
+        age: 25,
+        subject: "国語",
+      }
+      console.log(teacher)
+
+      // keyを指定してオブジェクトを表示させる
+      var teacher = {
+        name: "太郎", 
+        age: 25,
+        subject: "国語",
+      }
+      console.log(teacher.name)
+
+      // オブジェクトを配列として変数に代入させる
+      var teachers = [
+      {
+        name: "太郎", 
+        age: 25,
+        subject: "国語",
+      },
+      {
+        name: "浩司", 
+        age: 30,
+        subject: "数学",
+      },
+      {
+        name: "花子", 
+        age: 26,
+        subject: "社会",
+      }
+    ]
+    console.log(teachers)
+
+    // [] = 配列
+    // {} = オブジェクト
+
+    // 課題1
+    var tea = ["緑茶", "紅茶", "烏龍茶", "玄米茶"]
+    console.log(tea[0],tea[2])
+    
+    // 課題2
+    // プロパティとは、key(名前)とvalue(値)がついになったものを指す
+    // このプロパティの集合はオブジェクトという
+    // 参考：https://jsprimer.net/basic/object/
+
+    // 課題3
+    var tea = {
+      name: "緑茶",
+      temperature: "70°C",
+      extraction_time: "30sec",
+    }
+    console.log(tea)
+
+    // 課題4
+    // 課題にはオブジェクトを３つとありましたが、配列の３番目を表示させるためにオブジェクトを４つ用意しています
+    var tea = [
+    {
+      name: "緑茶",
+      temperature: "70°C",
+      extraction_time: "30sec",
+    },
+    {
+      name: "紅茶",
+      temperature: "95°C",
+      extraction_time: "180sec",
+    },
+    {
+      name: "烏龍茶",
+      temperature: "80°C",
+      extraction_time: "45sec",
+    },
+    {
+      name: "玄米茶",
+      temperature: "85°C",
+      extraction_time: "20sec",
+    }
+  ]
+  console.log(tea[0],tea[3])
+    </script>
+</body>
+</html>

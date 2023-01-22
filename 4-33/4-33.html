@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+    // 冗長に感じるコード
+        var boolean = true;
+        var resultText = "";
+        if (boolean) {
+          resultText = "Aの処理"
+        } else {
+          resultText = "Bの処理"
+        };
+          console.log(resultText);
+
+    // 三項演算子に修正すると…
+        var boolean = true;
+        var resultText = boolean ? "Aの処理" : "Bの処理";
+          console.log(resultText);
+
+    // 4-32の関係演算子もこのように処理できる
+        var resultNum = 5 > 2 ? "true" : "false";
+          console.log(resultNum)
+
+    // 三項演算子は[ 条件式 ? trueの処理 : falseの処理 ]
+
+    // 課題1
+        var resultText = boolean ? "true" : "false";
+          console.log(resultText)
+
+    // 課題2
+        Num = 10;
+        resultNum = Num > 5 ? "true" : "felse";
+        console.log(resultNum)  
+
+    // 課題3
+        Num = 10;
+        resultNum = Num < 5 ? "true" : "felse";
+        console.log(resultNum) 
+
+    // 課題4
+        Num = 10;
+        resultNum = Num >= 10 ? "true" : "felse";
+        console.log(resultNum)
+
+    // 課題5
+        result = "" ? "true" : "felse";
+        console.log(result) 
+    </script>
+</body>
+</html>
+
+
+<!-- 参考：https://www.javadrive.jp/start/ope/index13.html -->
+<!-- 課題５参考：https://codelikes.com/javascript-conditional-operator/ -->

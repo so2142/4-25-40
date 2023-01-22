@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+        // プロパティーとは以下を合わせた名称のこと
+        // var xxx = {
+        // key(と呼びます): "value(と呼びます)",
+        // }
+
+        // メソッドとは、プロパティーのvalueが関数になっているもの
+        const teacher = {
+            name: "太郎", subject: "国語",
+            // これがプロパティー
+
+            profile: function() {
+                console.log("担当教科は国語です")
+            }
+            // これがメソッド
+        }
+
+        teacher.profile()
+
+        // 引数とは関数を呼び出す時に呼び出し先へ値を引き渡す値のこと
+        function sumNum1(x) {
+        // x が引数
+          const result = x + 1
+        //   引き渡された引数を元に計算
+          console.log(result);
+        };
+        
+        sumNum1(1)
+
+        // 複数の引数
+        function sumNum2(x, y) {
+          const result = x + y
+          console.log(result);
+        };
+
+        sumNum2(5, 10)
+        // ここでは最初の引数であるxは、第１引数
+        // yは、第2引数と呼ぶ
+
+        // 文字列を渡すことも可能である
+        function showText(x) {
+            console.log(x);
+        };
+
+        showText('引数')
+
+        // 引数の書き忘れに注意
+        // 引き渡された値で計算する場合は数値型を渡すこと
+
+        function tomato(price1, func) {
+          const name = "トマト";
+          func(name, price1);
+        }
+          const price1 = function price1(name, price1) { 
+          console.log(name + "の値段は" + price1 + "円です。");
+        }
+        
+        tomato(100, price1);
+
+        // 解説
+        // tomato(100,price)の100が第1引数、priceが第2引数へ
+        // func(name, price)が実行される
+        // func(name, price) = price(name, price)のイメージ
+        // price(name, price)が実行され、引数として渡された値を表示
+
+
+        // 課題1
+        // オブジェクトは key:valueのセットでさまざまなデータを格納できるが、
+        // この時の key:valueが
+        // 名前:値   ==>プロパティー
+        // 名前:関数 ==>メソッド
+        // とされる(オブジェクトの世界では)
+        // 参考:https://www.sejuku.net/blog/61326
+
+        // 1つ目
+        const obj1 = {
+          showText1: function showText1() {
+            alert("ひとつめ");
+          }
+        }
+
+        obj1.showText1()
+
+        // 2つ目
+        const obj2 = {
+          showText2: function() {
+            console.log("緑茶は70°Cで30秒です。");
+          }
+        }
+        
+        obj2.showText2()
+
+        // 3つ目
+        const obj3 = {
+          addNum3: function addNum(a,b) {
+            a = 1,
+            b = 2,
+            console.log(a + b);
+          }
+        }
+
+        obj3.addNum3()
+
+        // 課題2
+        function fruit(name, price) {
+          const result = name + "の値段は" + price + "円です。"
+          return result
+        };
+
+        console.log(fruit("キウイ","100"));
+
+        // 参考:https://www.sejuku.net/blog/28728
+
+        // 課題3 
+        function addTax(price, func) {
+          // priceは値段
+          // funcは実行する関数名
+          // 税込価格を計算して四捨五入して整数にしている(スコープ内でしか参照できません) 
+          const taxPrice = Math.round(price * 1.10);
+          func(vegitable,taxPrice);
+        }
+        const price = function price(vegitable,price) {
+          console.log(vegitable + "の値段は" + price + "円です。");
+        } 
+
+        // トマトの税込み価格をコンソールに表示させる処理
+        let vegitable = "トマト";
+        addTax(80,price);
+        // 玉ねぎの税込み価格をコンソールに表示させる処理
+        vegitable = "玉ねぎ";
+        addTax(35,price);
+
+    </script>
+</body>
+</html
+
+

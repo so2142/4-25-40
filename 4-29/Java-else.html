@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+        var boolean = false;
+        if(boolean){
+            console.log("trueの処理");
+            console.log(boolean);
+        } else {
+            console.log("falseの処理");
+            console.log(boolean);
+        };
+
+        var boolean = false;
+        if (boolean) {
+            console.log("trueの処理");
+            console.log(boolean);
+        } else {
+            console.log("falseの処理");
+            console.log(boolean);
+        };
+
+        // 課題
+        // 1:elseを使用する上での注意点は、ifがある場合のみに使用が可能・ifとelseの間に処理を書くとエラーになると言うことである
+        // 2:JavaScriptで実装した時の確認ポイントは、動作確認のほか、コンソール上にエラーが表示されていないかを確認することである
+        // 以下、JavaScriptコードの課題
+
+        // 3:
+        var num = "55"
+        if (num<50) {
+            console.log("trueの処理");
+        } else {
+            console.log("falseの処理");
+        }
+
+        var result1 = '1'
+        var result2 = 1
+        if(result1===result2) {
+            console.log("trueの処理");
+        } else {
+            console.log("falseの処理");
+        }
+
+        // 4:
+        var result3 = 'あいうえお';
+        var result4 = new String('あいうえお');
+        if (result1===result2) {
+            console.log("trueの処理");
+        } else {
+            console.log("falseの処理");
+        }
+    </script>
+</body>
+</html>
+
+<!-- 参考サイト:https://www.sejuku.net/blog/20736 -->
+<!-- 参考サイト:https://www.sejuku.net/blog/23942 -->

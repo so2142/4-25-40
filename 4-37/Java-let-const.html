@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+        // var(再代入、再宣言可)
+        // numと言う変数宣言を行い、1を代入している
+        var num = 1
+        // 先ほど作成したnumへ2を代入している
+        num = 2
+        // 先ほど作成したnumとは別のnumを変数として作成し、3を代入している(再宣言)
+        var num = 3
+
+        // let(再代入可、再宣言不可)
+        // numと言う変数宣言を行い、1を代入している
+        let num = 1
+        // 先ほど作成したnumへ2を代入している
+        num = 2
+        // 先ほど作成したnumが既に存在しているのでエラー
+        var num = 3
+
+        // const(再代入、再宣言不可)
+        // numと言う変数宣言を行い、1を代入している
+        const num = 1
+        // 再代入不可のためエラー
+        num = 2
+        // 先ほど作成したnumが既に存在しているのでエラー
+        var num = 3
+
+        // var,letは変数
+        // constは定数
+
+        // varは再代入、再宣言のどちらもできてしまうため、グローバルな変数になりやすい
+        // そのため、現場では使われない(バグ防止)
+
+        // 課題1 var,let,constの使い方について
+        // var,letは変数であり、再代入が可能である(=値の上書きが可能である)
+        // そのため、上書きされても良いものや、上書きされてもやむを得ないものに使用
+        // constは定数であり、再代入が不可である
+        // 上書きや文字列の変更をしてほしくない時に使用
+        // 行数が増えたときに誤って書き換えしてしまう、されてしまい、
+        // それによる意図しない動きを防ぐためにも、基本的にはconstを使用する
+
+        // 課題2 varを使わない理由について
+        // let,constでは同名での宣言はエラーとなり、出来ない仕様である(再宣言の不可)
+        // スコープの範囲が広い(関数内で宣言した変数を、その関数内のどこからでも呼び出せる)
+        // 変数の巻き上げがある(関数内で宣言された変数は、関数の先頭で宣言したと見做される)
+        // 以上の3点から、変数の値が意図しない影響を受けてしまう可能性があり、これがバグの温床となりやすいためである
+        // 参考：https://typescriptbook.jp/reference/values-types-variables/vars-problems
+        // 参考：https://dimzakki.com/javascript-var/
+
+        // 課題3 定数とは
+        // 一度宣言されると変更できない値のこと
+    </script>
+</body>
+</html

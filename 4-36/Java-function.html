@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+        // 関数宣言
+        function functionTest() {
+            // ここに処理を書いていきます
+        }
+        // function     関数宣言
+        // functionTest 関数名
+
+        function showAlert() {
+            alert("functionTestが実行されました")
+        }
+        // 上記のままでは何も起こらない
+
+        function showAlert() {
+            alert("functionTestが実行されました")
+        }
+        showAlert()
+        // showAlert()を追加したことでアラートが表示される
+
+        var getText = function () {
+            return "getTextが実行されたのでこのテキストを返します。"
+        };
+
+        console.log(getText());
+        //returnは返す役割
+        // 何も返さずに処理を終了するときにも利用
+        
+        // スコープ
+        var getText = function () {
+            var text = "getTextが実行されたのでこのテキストを返します。";
+            console.log(text);
+        };
+
+        console.log(getText());
+        // ↑実行コード
+
+        // 関数名は分かりやすくすること
+        // 取得：get 追加：addなど
+        // 動詞の背後に続く文字は必ず大文字に
+        
+        // 課題1
+        function showAlert2() {
+            alert("ページから離れます")
+        }
+
+        showAlert2()
+
+        // 課題2
+        var  addNum = function() {
+            var addNumber = 10 * 10;
+            console.log(addNumber);
+        };
+        
+        console.log(addNum());
+        // 参考 https://www.sejuku.net/blog/27210
+
+        // 課題3
+        // スコープについて
+        // スコープとは、変数が扱える範囲のこと
+        // 変数を宣言したら、{}の間がその変数を使える範囲となる
+        // このスコープを意識しないとコンパイルエラーになる
+        // 参照 https://qiita.com/gatchan03/items/e8eecf468b7dab960198
+
+    </script>
+</body>
+</html

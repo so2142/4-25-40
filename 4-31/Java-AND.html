@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <head></head>
+        <main></main>
+        <footer></footer>
+        <script>
+        // 論理演算子AND(&&)
+            // 一致した場合
+            var numA = 20;
+            var numB = 40;
+            if (numA == 20 && numB == 40) {
+                console.log("ANDの条件と一致した処理");
+                console.log(numA == 20 && numB == 40);
+            } else {
+                console.log("ANDの条件と一致しなかった処理");
+                console.log(numA == 20 && numB == 40);
+            };
+
+            // 一致しなかった場合
+            var numA = 30;
+            var numB = 40;
+            if (numA == 20 && numB == 40) {
+                console.log("ANDの条件と一致した処理");
+                console.log(numA == 20 && numB == 40);
+            } else {
+                console.log("ANDの条件と一致しなかった処理");
+                console.log(numA == 20 && numB == 40);
+            };
+
+        // 論理演算子OR(||)
+            // 両方とも一致した場合
+            var numA = 20;
+            var numB = 40;
+            if (numA == 20 || numB == 40) {
+                console.log("ORの条件と一致した処理");
+                console.log(numA == 20 || numB == 40);
+            } else {
+                console.log("ORの条件と一致しなかった処理");
+                console.log(numA == 20 || numB == 40);
+            };
+            // 片方だけ一致した場合
+            var numA = 30;
+            var numB = 40;
+            if (numA == 20 || numB == 40) {
+                console.log("ORの条件と一致した処理");
+                console.log(numA == 20 || numB == 40);
+            } else {
+                console.log("ORの条件と一致しなかった処理");
+                console.log(numA == 20 || numB == 40);
+            };
+            // 両方とも一致していない場合
+            var numA = 30;
+            var numB = 50;
+            if (numA == 20 || numB == 40) {
+                console.log("ORの条件と一致した処理");
+                console.log(numA == 20 || numB == 40);
+            } else {
+                console.log("ORの条件と一致しなかった処理");
+                console.log(numA == 20 || numB == 40);
+            };
+
+        // 論理演算子NOT(!)
+            //NOT(!)で否定した為、falseで一致した場合の処理となる 
+            var boolean = false;
+            if (!boolean) {
+                console.log("NOTの条件と一致した処理");
+                console.log(boolean);
+            } else {
+                console.log("NOTの条件と一致しなかった処理");
+                console.log(boolean);
+            }
+            //NOT(!)で否定した為、tlueで一致しなかった場合の処理となる 
+            var boolean = true;
+            if (!boolean) {
+                console.log("NOTの条件と一致した処理");
+                console.log(boolean);
+            } else {
+                console.log("NOTの条件と一致しなかった処理");
+                console.log(boolean);
+            }
+
+        // 課題1
+            var string1 = "あいうえお"
+            var string2 = "かきくけこ"
+            if (string1 == "あいうえお" && string2 =="かきくけこ") {
+                console.log("条件と一致した処理");
+                console.log(string1 == "あいうえお" && string2 =="かきくけこ");
+            } else {
+                console.log("条件と一致しなかった処理");
+                console.log(string1 == "あいうえお" && string2 =="かきくけこ");
+            }
+
+        // 課題2
+            var boolean1 = true;
+            var boolean2 = true;
+            if (boolean1 ==true || boolean2 ==false) {
+                console.log("条件と一致した処理");
+                console.log(boolean);
+            } else {
+                console.log("条件と一致しなかった処理");
+                console.log(boolean);
+            }
+
+        // 課題3
+            var numC = 10;
+            if (!numC) {
+                console.log("条件と一致した処理");
+                console.log(boolean);
+            } else {
+                console.log("条件と一致しなかった処理");
+                console.log(boolean);  
+            }
+        </script>
+    </body>
+</html>
+
